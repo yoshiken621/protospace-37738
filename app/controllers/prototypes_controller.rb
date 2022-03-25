@@ -25,7 +25,7 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-    unless current_user.id == @prototype.user_id?
+    unless current_user.id == @prototype.user_id
       redirect_to action: :show
     end
   end
